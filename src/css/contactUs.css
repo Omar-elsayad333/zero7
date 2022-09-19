@@ -1,0 +1,17 @@
+.contact-us {
+    height: 60vh;
+}
+
+.contact-us .soon-title {
+    font-family: var(--main-font);
+    color: var(--main-color);
+    font-size: 50px;
+    text-align: center;
+}
+
+@media (max-width:500px) {
+    
+    .contact-us .soon-title {
+        font-size: 30px;
+    }
+}

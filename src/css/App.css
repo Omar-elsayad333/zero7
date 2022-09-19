@@ -1,0 +1,128 @@
+/* =======================
+    Start Global Variables
+==========================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+
+:root{
+    --main-color : rgb(209, 174, 111);
+    --subMain-color : rgb(166 166 166);
+    --main-font : 'Merriweather', serif;
+    --secondery-font : 'Oswald', sans-serif;
+}
+
+.mainBut {
+    width: 200px;
+    height: 45px;
+    font-size: 14px;
+    font-family: 'Merriweather', serif;
+    color: var(--main-color);
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 20px;
+    transition: .4s;
+}
+
+.mainBut:hover {
+    color: black;
+    background-color: var(--main-color);
+}
+
+@media (max-width: 500px) {
+    .mainBut {
+        width: 150px;
+        height: 35px;
+        font-size: 10px;
+    }
+}
+
+.input {
+    width: 500px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 2px var(--main-color);
+    color: white;
+    font-family: var(--main-font);
+    letter-spacing: 1px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input::placeholder {
+    color: rgb(116, 116, 116);
+    font-family: var(--main-font);
+    font-size: 15px;
+}
+
+@media (max-width:1000px) {
+    .input {
+        width: 300px;
+        font-size: 15px;
+    }
+
+    .input::placeholder {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:600px) {
+    .input {
+        width: 200px;
+        font-size: 12px;
+    }
+
+    .input::placeholder {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:250px) {
+    .input {
+        width: 150px;
+        font-size: 12px;
+    }
+
+    .input::placeholder {
+        font-size: 12px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: var(--subMain-color); 
+}
+::-webkit-scrollbar-thumb {
+    background: var(--main-color); 
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(181, 138, 58); 
+} 
+
+/* =====================
+    End Global Variables
+========================*/
+
+
+/* ==================
+    Start App Section
+=====================*/
+
+.App {
+    background-image: url(../images/background.jpeg);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+/* ================
+    End App Section
+===================*/

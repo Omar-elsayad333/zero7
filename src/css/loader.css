@@ -1,0 +1,66 @@
+/*  ======================
+    Start Global Variables
+==========================*/
+
+:root{
+    --main-color : rgb(209, 174, 111);
+    --subMain-color : rgb(166 166 166);
+    --main-font : 'Merriweather', serif;
+    --secondery-font : 'Oswald', sans-serif;
+}
+
+/*  ====================
+    End Global Variables
+========================*/
+
+.loader {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: .8;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader .spinner{
+    border: 13px solid var(--subMain-color); /* Light grey */
+    border-top: 13px solid var(--main-color); /* Blue */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin .7s linear infinite;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.home-loader {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-loader .home-spinner {
+    width: 150px;
+    height: 150px;
+    animation: homeSpin 3s linear infinite;
+}
+
+@keyframes homeSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

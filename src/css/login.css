@@ -1,0 +1,52 @@
+/*  ======================
+    Start Global Variables
+==========================*/
+
+:root{
+    --main-color : rgb(209, 174, 111);
+    --subMain-color : rgb(166 166 166);
+    --main-font : 'Merriweather', serif;
+    --secondery-font : 'Oswald', sans-serif;
+}
+
+/*  ====================
+    End Global Variables
+========================*/
+
+
+/*  ==================
+    start form section
+======================*/
+
+.log-in {
+    height: 80vh;
+}
+
+.log-in .container .log-form {
+    gap: 50px;
+}
+
+.log-in .container .log-form .but-groub {
+    gap: 20px;
+}
+
+.log-in .container .log-form .but-groub .sub-but {
+    color: #14A800;
+    border: #14A800 2px solid;
+}
+
+.log-in .container .log-form .but-groub .sub-but:hover {
+    color: white;
+    background-color: #14A800;
+}
+
+@media (max-width:500px) {
+    .log-in .container .log-form .but-groub {
+        gap: 20px;
+        flex-direction: column;
+    }
+}
+
+/*  ================
+    End form section
+====================*/

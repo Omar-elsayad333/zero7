@@ -1,0 +1,64 @@
+/*  ======================
+    Start Global Variables
+==========================*/
+
+:root{
+    --main-color : rgb(209, 174, 111);
+    --subMain-color : rgb(166 166 166);
+    --main-font : 'Merriweather', serif;
+    --secondery-font : 'Oswald', sans-serif;
+}
+
+.mtb {
+    margin-top: 100px;
+}
+
+/*  ====================
+    End Global Variables
+========================*/
+
+
+/*  ==================
+    start cart section
+======================*/
+
+.cart-container .cart .cart-products .product-container .product-details .product-n {
+    color: var(--main-color);
+    font-family: var(--main-font);
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+.cart-container .cart .cart-products .product-container .product-img img {
+    border-radius: 30px;
+}
+
+.cart-container .cart .cart-products .product-container .remove-icon {
+    color: var(--subMain-color);
+    cursor: pointer;
+}
+
+.cart-container .cart .cart-summary h1, hr{
+    color: var(--main-color);
+    font-family: var(--main-font);
+}
+
+.cart-container .cart .cart-summary p {
+    color: var(--subMain-color);
+    font-family: var(--secondery-font);
+    font-size: 20px;
+}
+
+@media (max-width:550px) {
+    .cart-container .cart .cart-products .product-container .product-details .product-n {
+        font-size: 25px;
+    }
+
+    .cart-container .cart .cart-summary p {
+        font-size: 18px;
+    }
+}
+
+/*  ================
+    end cart section
+====================*/

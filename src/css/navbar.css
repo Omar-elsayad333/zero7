@@ -1,0 +1,176 @@
+/*  ======================
+    Start Global Variables
+==========================*/
+
+:root{
+    --main-color : rgb(209, 174, 111);
+    --subMain-color : rgb(166 166 166);
+    --main-font : 'Merriweather', serif;
+    --secondery-font : 'Oswald', sans-serif;
+}
+
+.fa-right-to-bracket {
+    color: #14A800;
+    font-size: 15px;
+}
+
+.fa-user {
+    font-size: 15px;
+    color: white;
+}
+
+/*  ====================
+    End Global Variables
+========================*/
+
+
+/* =====================
+    Start Navbar Section
+========================*/
+
+.navbar .container .menu-buttons .fa-bars {
+    color: white;
+    font-size: 15px;
+}
+
+.navbar .container .menu-buttons .fa-cart-shopping {
+    color: white;
+    font-size: 15px;
+}
+
+.navbar .container .menu-buttons .cart {
+    position: relative;
+}
+
+.navbar .container .menu-buttons .cart .cart-noification {
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 50%;
+    font-family: var(--secondery-font);
+    font-size: 10px;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    top: -7px;
+    right: -7px;
+}
+
+.navbar .container img {
+    width: 130px;
+}
+
+@media (max-width: 990px) {
+    .navbar .container img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar .container img {
+        width: 70px;
+    }
+
+    .navbar .container .fa-bars {
+        font-size: 15px;
+    }
+}
+
+.navbar .container ul {
+    margin: 0 !important; 
+    padding: 0 !important;
+}
+
+.navbar .container ul a {
+    font-family: 'Oswald', sans-serif;
+    text-transform: capitalize;
+    color: var(--subMain-color);
+    position: relative;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.navbar .container ul .cart {
+    position: relative;
+}
+
+.navbar .container ul .cart .cart-noification {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    font-family: var(--secondery-font);
+    font-size: 13px;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    right: -5px;
+}
+
+.navbar .container ul a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: var(--main-color);
+    left: 13px;
+    bottom: 10px;
+    position: absolute;
+    transition: .4s;
+}
+
+.navbar .container ul a:hover::after{
+    content: '';
+    width: calc(100% - 26px);
+}
+
+.navbar .menu {
+    display: none;
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 100;
+}
+
+.navbar .menu ul {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 30px;
+    font-family: 'Merriweather', serif;
+    text-transform: capitalize;
+}
+
+.navbar .menu ul .link {
+    color: white;
+}
+
+.navbar .menu ul .fa-xmark {
+    color: var(--main-color);
+    font-size: 50px;
+}
+
+@media (max-width: 500px) {
+    .navbar .menu ul {
+        font-size: 20px;
+    }
+
+    .navbar .menu ul .fa-xmark {
+        font-size: 40px;
+    }
+}
+
+/* ===================
+    End Navbar Section
+======================*/

@@ -1,0 +1,103 @@
+/*  ======================
+    Start Global Variables
+==========================*/
+
+:root{
+    --main-color : rgb(209, 174, 111);
+    --subMain-color : rgb(166 166 166);
+    --main-font : 'Merriweather', serif;
+    --secondery-font : 'Oswald', sans-serif;
+}
+
+.mtb {
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.cardBut {
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    font-family: 'Merriweather', serif;
+    color: var(--main-color);
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 20px;
+    transition: .4s;
+}
+
+.cardBut:hover {
+    color: white;
+    background-color: var(--main-color);
+}
+
+@media (max-width: 500px) {
+    .cardBut {
+        width: 150px;
+        height: 35px;
+        font-size: 10px;
+    }
+}
+
+/*  ====================
+    End Global Variables
+========================*/
+
+
+/*  ==================
+    start shop section
+======================*/
+
+.shop .card-container .shopVideo {
+    margin-bottom: 100px;
+    border-radius: 50px;
+    -webkit-filter: brightness(0.5);
+    -moz-filter: brightness(0.5);
+    -o-filter: brightness(0.5);
+    -ms-filter: brightness(0.5);
+    filter: brightness(0.4);
+}
+
+.shop .card-container .cards .product-img {
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.shop .card-container .cards .product-n {
+    font-family: var(--main-font);
+    color: var(--main-color);
+    font-size: 25px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.shop .card-container .cards .product-p {
+    font-family: var(--secondery-font);
+    color: var(--subMain-color);
+}
+
+@media (max-width: 576px) {
+    .shop .card-container .cards .product-n{
+        font-size: 17px;
+    }
+
+    .shop .card-container .cards .product-p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .shop .card-container .cards .product-n{
+        font-size: 15px;
+    }
+
+    .shop .card-container .cards .product-p{
+        font-size: 12px;
+    }
+}
+
+/*  ================
+    End shop section
+====================*/
+

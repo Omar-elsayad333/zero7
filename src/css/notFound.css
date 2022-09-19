@@ -1,0 +1,40 @@
+/*  ======================
+    Start Global Variables
+==========================*/
+
+:root{
+    --main-color : rgb(209, 174, 111);
+    --subMain-color : rgb(166 166 166);
+    --main-font : 'Merriweather', serif;
+    --secondery-font : 'Oswald', sans-serif;
+}
+
+/*  ====================
+    End Global Variables
+========================*/
+
+
+/*  =======================
+    start not found section
+===========================*/
+
+.not-found .num {
+    color: var(--main-color);
+    font-family: var(--main-font);
+    font-size: 60px;
+}
+
+.not-found .text {
+    color: var(--main-color);
+    font-family: var(--main-font);
+}
+
+.not-found .home-link {
+    color: var(--subMain-color);
+    font-size: 17px;
+}
+
+
+/*  =====================
+    End not found section
+=========================*/

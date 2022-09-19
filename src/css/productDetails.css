@@ -1,0 +1,108 @@
+/*  ======================
+    Start Global Variables
+==========================*/
+
+:root{
+    --main-color : rgb(209, 174, 111);
+    --subMain-color : rgb(166 166 166);
+    --main-font : 'Merriweather', serif;
+    --secondery-font : 'Oswald', sans-serif;
+}
+
+.mtb {
+    margin-top: 100px;
+}
+
+.selected {
+    background-color: var(--main-color);
+    color: black;
+}
+
+.not-selected {
+    background-color: transparent;
+    color: var(--main-color);
+}
+
+.selected-color {
+    border-color: var(--main-color) !important;
+}
+
+.details-layout {
+    color: var(--subMain-color);
+    font-family: var(--secondery-font);
+    font-size: 20px;
+}
+
+/*  ====================
+    End Global Variables
+========================*/
+
+
+/*  =====================
+    start product section
+=========================*/
+
+.product-container .product .product-images img {
+    border-radius: 50px;
+}
+
+.product-container .product .product-details .product-n {
+    color: var(--main-color);
+    font-family: var(--main-font);
+    text-transform: capitalize;
+}
+
+.product-container .product .product-details .sizes {
+    gap: 25px;
+}
+
+.product-container .product .product-details .sizes .size {
+    border: 3px solid var(--main-color);
+    width: 50px;
+    height: 50px;
+    text-transform: uppercase;
+    font-family: var(--secondery-font);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.product-container .product .product-details .quantity-container .combo-box {
+    background-color: black;
+    color: var(--main-color);
+    border: 2px var(--main-color) solid;
+    text-align: center;
+    border-radius: 10px;
+}
+
+@media (max-width:300px) {
+    .product-container .product {
+        margin: 0 !important;
+    }
+
+    .product-container .product .product-images img {
+        border-radius: 40px;
+    }
+
+    .product-container .product .product-details .product-d {
+        font-size: 15px;
+    }
+
+    .product-container .product .product-details .product-p {
+        font-size: 15px;
+    }
+
+    .product-container .product .product-details .sizes .size {
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+    }
+
+    .product-container .product .product-details .quantity-container .combo-box-title {
+        font-size: 15px;
+    }
+}
+
+/*  ===================
+    end product section
+=======================*/

@@ -1,0 +1,17 @@
+.account-settings {
+    gap: 50px;
+}
+
+.account-settings .but-group {
+    gap: 20px;
+}
+
+.account-settings .but-group .sub-but {
+    color: #14A800;
+    border: #14A800 2px solid;
+}
+
+.account-settings .but-group .sub-but:hover {
+    color: white;
+    background-color: #14A800;
+}

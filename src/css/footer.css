@@ -1,0 +1,61 @@
+/*  ======================
+    Start Global Variables
+==========================*/
+
+:root{
+    --main-color : rgb(209, 174, 111);
+    --subMain-color : rgb(166 166 166);
+    --main-font : 'Merriweather', serif;
+    --secondery-font : 'Oswald', sans-serif;
+}
+
+/*  ====================
+    End Global Variables
+========================*/
+
+
+/*  ====================
+    start footer section
+========================*/
+
+.footer {
+    margin-top: 100px;
+    width: 100%;
+    background-color: black;
+}
+
+.footer .footer-section {
+    margin: auto;
+}
+
+.footer .footer-section .social-icons {
+    gap: 20px;
+}
+
+.footer .footer-section .social-icons p{
+    color: var(--main-color);
+    font-family: var(--main-font);
+    font-size: 20px;
+}
+
+.footer .footer-section .social-icons .icons {
+    gap: 20px;
+}
+
+.footer .footer-section .social-icons .icons a {
+    color: white;
+}
+
+.footer .footer-section .footer-logo img{
+    max-width: 60%;
+}
+
+.footer .footer-section .footer-info {
+    color: white;
+}
+
+/*  ==================
+    End footer section
+======================*/
+
+

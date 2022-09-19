@@ -1,0 +1,37 @@
+/*  ======================
+    Start Global Variables
+==========================*/
+
+:root{
+    --main-color : rgb(209, 174, 111);
+    --subMain-color : rgb(166 166 166);
+    --main-font : 'Merriweather', serif;
+    --secondery-font : 'Oswald', sans-serif;
+}
+
+/*  ====================
+    End Global Variables
+========================*/
+
+.recent-orders .order-code {
+    font-family: var(--main-font);
+    font-size: 30px;
+    color: white;
+}
+
+.recent-orders .order-details .order-products .product-data {
+    font-family: var(--main-font);
+    font-size: 17px;
+    color: white;
+    gap: 15px;
+}
+
+@media (max-width: 500px) {
+    .recent-orders .order-code {
+        font-size: 20px;
+    }
+
+    .recent-orders .order-details .order-products .product-data {
+        font-size: 14px;
+    }
+}
